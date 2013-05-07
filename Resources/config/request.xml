@@ -14,7 +14,7 @@
     <services>
 
         <service id="fos_rest.request.param_fetcher" class="%fos_rest.request.param_fetcher.class%" scope="request">
-            <argument type="service" id="fos_rest.request.param_fetcher.reader"/>
+            <argument type="service" id="fos_rest.request.param_fetcher.reader" strict="false"/>
             <argument type="service" id="request"/>
         </service>
 
